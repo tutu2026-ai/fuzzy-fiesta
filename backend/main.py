@@ -28,4 +28,5 @@ def read_root():
 def get_items():
     # Fetch data from your Supabase DB
     response = supabase.table('items').select("*").execute()
-    return response.data
+    return response.data    $env:SUPABASE_URL = "https://your-actual-url.supabase.co"
+    $env:SUPABASE_KEY = "your-actual-anon-key"

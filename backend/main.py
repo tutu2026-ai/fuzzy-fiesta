@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from subapase import create_client, client
+from supabase import create_client
+from supabase.client import Client
 import os
 
 app = FastAPI()
